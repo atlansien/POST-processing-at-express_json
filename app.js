@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 app.post("/", (req, res) => {
   res.render("index", {
     message: req.body.message,
-    date: moment.format(mmmm)
+    date: moment().format("YYYY年MM月DD日HH時mm分ss秒")
   });
 });
 
