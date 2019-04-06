@@ -4,6 +4,8 @@
 - Express
 - body-parser
 - EJS
+- nodemon
+- Moment.js
 
 ## なぜ作ったか
 
