@@ -1,13 +1,5 @@
 const express = require("express");
-const bodyParser = require("body-parser");
-const moment = require("moment");
-
-const app = express();
 const router = express.Router();
-const PORT = 3000;
-
-app.set("view engine", "ejs");
-app.use(bodyParser.urlencoded({ extended: true }));
 
 router
   .get("/", (req, res) => {
@@ -24,6 +16,4 @@ router
     });
   });
 
-app.listen(PORT, () => {
-  console.log(`Exmample app listening on port ${PORT}`);
-});
+module.exports = router;
