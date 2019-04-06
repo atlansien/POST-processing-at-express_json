@@ -19,7 +19,3 @@ app.post("/", (req, res) => {
     message: req.body.message
   });
 });
-
-app.listen(PORT => {
-  console.log(`Exmample app listening on port ${PORT}`);
-});
