@@ -1,6 +1,6 @@
 const express = require("express");
-const ejs = require("ejs");
 const bodyParser = require("body-parser");
+const moment = require("moment");
 
 const app = express();
 const PORT = 3000;
@@ -10,13 +10,15 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
   res.render("index", {
-    message: "メッセージが出力されます"
+    message: "メッセージが出力されます",
+    date: "入力した時刻を表示します"
   });
 });
 
 app.post("/", (req, res) => {
   res.render("index", {
-    message: req.body.message
+    message: req.body.message,
+    date: moment.format(mmmm)
   });
 });
 
