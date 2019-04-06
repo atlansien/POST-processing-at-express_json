@@ -1,28 +1,14 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const moment = require("moment");
+const router = require("./router/route");
 
 const app = express();
-const router = express.Router();
 const PORT = 3000;
 
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 
-router
-  .get("/", (req, res) => {
-    res.render("index", {
-      message: "メッセージが出力されます",
-      date: "入力した時刻を表示します"
-    });
-  })
-
-  .post("/", (req, res) => {
-    res.render("index", {
-      message: req.body.message,
-      date: moment().format("YYYY年MM月DD日HH時mm分ss秒")
-    });
-  });
+app.use("/", router);
 
 app.listen(PORT, () => {
   console.log(`Exmample app listening on port ${PORT}`);
