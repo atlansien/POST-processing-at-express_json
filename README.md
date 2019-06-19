@@ -1,15 +1,5 @@
-# body-parserを使って入力したデータをhtml上に出力する
+# express.jsonを使って入力したデータをhtml上に出力する
 
-## 使用したライブラリ
-- Express
-- body-parser
-- EJS
-- nodemon
-- Moment.js
+以下のコードを`express.json`で使えるよう編集しました
 
-## なぜ作ったか
-
-今後DBを使ったWebアプリ(Todoリストなど)を作ってみたいので、とりあえずNode.jsを使ってHTML上にデータを出力してみたかった
-
-簡単にですがQiitaでコードの解説をしています
-[body-parserを使って入力したデータをhtml上に出力する](https://qiita.com/atlansien/items/2dad964467874b846f04)
+https://github.com/atlansien/POST-processing-at-body-parser
