@@ -1,5 +1,5 @@
 {
-  "name": "POST-processing-at-body-parser",
+  "name": "POST-processing-at-express-json",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,9 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
-    "express": "^4.16.4",
+    "express": "^4.17.1",
     "moment": "^2.24.0"
   },
   "devDependencies": {
